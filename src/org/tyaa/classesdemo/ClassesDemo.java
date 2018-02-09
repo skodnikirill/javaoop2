@@ -65,6 +65,8 @@ public class ClassesDemo {
         
         System.out.println(pixel2.toString());
         System.out.println(pixel3.toString());
+        
+        //demo changes
     }
     
 }
