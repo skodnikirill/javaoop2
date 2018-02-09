@@ -43,6 +43,9 @@ public class Pixel extends Point {
         
         return super.getY(); //To change body of generated methods, choose Tools | Templates.
     }
-    
-    
+
+    @Override
+    public String toString() {
+        return super.toString() + "; color = " + color;
+    }
 }

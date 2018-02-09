@@ -14,6 +14,9 @@ public class Point {
     
     //public int x;
     //public int y;
+    //Поля для экземпляров
+    private int x;
+    private int y;
     
     //Поля для объекта
     private static int count;
@@ -22,10 +25,6 @@ public class Point {
     /*static {
         count = 0;
     }*/
-
-    public static int getCount() {
-        return count;
-    }
     
     //Констркутор без параметров
     public Point(){
@@ -46,10 +45,10 @@ public class Point {
         //то же самое, что:
         //count += 1;
     }
-    
-    //Поля для экземпляров
-    private int x;
-    private int y;
+
+    public static int getCount() {
+        return count;
+    }
 
     //Метод чтения значения из поля экземпляров
     public int getX() {
@@ -69,5 +68,12 @@ public class Point {
 
     public void setY(int y) {
         this.y = y;
+    }
+
+    @Override
+    public String toString() {
+        
+        return "x = " + this.x + "; y = " + this.y;
+        //return super.toString();
     }
 }
