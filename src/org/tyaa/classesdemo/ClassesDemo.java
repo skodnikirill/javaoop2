@@ -67,6 +67,7 @@ public class ClassesDemo {
         System.out.println(pixel3.toString());
         
         //demo changes
+        //demo changes 2
     }
     
 }
